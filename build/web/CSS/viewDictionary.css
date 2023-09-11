@@ -1,0 +1,129 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 17, 2023, 1:49:27 PM
+    Author     : hoang
+*/
+
+.interact-butt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.interact-butt form {
+    display: inline-block;
+}
+
+.interact-butt .add-word {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 1px;
+    cursor: pointer;
+}
+
+.interact-butt .edit-dict {
+    background-color: #FFEB3B;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 1px;
+    cursor: pointer;
+}
+
+.interact-butt .delete-button {
+    background-color: #F44336;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 1px;
+    cursor: pointer;
+}
+
+.interact-butt .add-word:hover {
+    background-color: #3E8E41;
+}
+
+.interact-butt .edit-dict:hover {
+    background-color: #D5D500;
+}
+
+.interact-butt .delete-button:hover {
+    background-color: #D32F2F;
+}
+
+.dict-view-box {
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.dict-info {
+    text-align: center;
+}
+
+.dict-info h2[name="title"] {
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: monospace;
+    max-width: 95%;
+    word-wrap: break-word;
+    text-align: left;
+}
+
+.dict-info p[name="description"] {
+    color: #777;
+    font-size: 14px;
+    text-align: left;
+    max-width: 95%;
+    word-wrap: break-word;
+}
+
+.dict-info .author {
+    display: block;
+    text-align: right;
+    font-style: italic;
+    text-decoration: none;
+}
+
+.list-word .word {
+    margin-top: 40px;
+}
+
+.list-word span {
+    font-size: 26px;
+    font-weight: bold;
+    color: blue;
+}
+
+.list-word .word a {
+    float: right;
+    text-decoration: none;
+    color: #58aee8;
+    font-size: 18px;
+    margin-right: 30px;
+    font-family: sans-serif;
+}
+
+.list-word h5 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #006666;
+}
+
+.list-word p:before {
+    content: "►     ";
+}
+
+.list-word p {
+    max-width: 95%;
+    word-wrap: break-word;
+}

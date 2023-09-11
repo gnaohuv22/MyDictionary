@@ -1,0 +1,174 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 17, 2023, 5:40:23 PM
+    Author     : hoang
+*/
+
+@keyframes fade {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #fffaf0;
+    font-family: sans-serif;
+}
+
+.default-profile-img {
+    position: absolute;
+    top: 0;
+    right: 80px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    cursor: pointer;
+}
+
+.task {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    padding-right: 30px;
+    display: none;
+    flex-direction: column;
+    background: white;
+    border-radius: 5px;
+    list-style: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.task.show-menu {
+    display: block;
+}
+
+.task a {
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.task a {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+    height: 80vh;
+    border-radius: 25px;
+    margin-left: 11%;
+    margin-top: 3vh;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    overflow: auto;
+    background-color: white;
+    animation: fade 0.75s ease-in-out;
+}
+
+.view-box {
+    margin-right: 2%;
+}
+
+.summary-inf {
+    width: 40%;
+    text-align: center;
+    float: left;
+    margin-top: 3vh;
+}
+
+.summary-inf .img {
+    width: 40vh;
+    height: 40vh;
+}
+
+.summary-inf .displayname {
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+}
+
+.view-box .summary-inf .username {
+    color: #777;
+}
+
+.information {
+    width: 55%;
+    float: right;
+    margin-top: 8vh;
+}
+
+.information h1 {
+    margin-top: 0;
+}
+
+.view-box .information label,
+.view-box .information input,
+.view-box .information textarea {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.view-box .information input,
+.view-box .information textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+.dictionary-collection {
+    margin-top: 10px;
+}
+
+.dictionary-collection h3 {
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 0;
+    color: #666666;
+}
+
+a .dictionary-ele {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+a .dictionary-ele:hover {
+    background-color: #d2b48c;
+}
+
+a .dictionary-ele img {
+    margin-right: 10px;
+}
+
+a .dictionary-ele .dict-name {
+    font-weight: bold;
+    align-items: center;
+    margin-left: 10px;
+    justify-content: center;
+    display: block;
+}

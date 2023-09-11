@@ -1,0 +1,84 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 12, 2023, 1:02:25 AM
+    Author     : hoang
+*/
+
+body {
+    background-color: #fffaf0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: #ff5d4d;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #cf3933;
+}
+
+.required {
+    color: red;
+}
+
+.add-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    min-width: 600px;
+    min-height: 600px;
+    box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    margin-top: 2%;
+}
+
+.add-box h2,
+.add-box label {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.add-box input[type="text"],
+.add-box textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border: 2px solid #A0A0A0;
+    border-radius: 6px;
+}
+
+.add-box .submit {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.add-box .submit:hover {
+    background-color: #4c9459;    
+}

@@ -1,0 +1,79 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 8, 2023, 10:50:18 PM
+    Author     : hoang
+*/
+
+@keyframes fade {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #fffaf0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fade 0.75s ease-in-out;
+}
+
+.required {
+    color: red;
+}
+
+.register-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    min-width: 400px;
+    box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.register-box h2,
+.register-box label {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.register-box input[type="text"],
+.register-box input[type="password"],
+.register-box input[type="email"],
+.register-box input[type="date"],
+.register-box textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border: 2px solid #A0A0A0;
+    border-radius: 6px;
+}
+
+.register-box input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.register-box input[type="submit"]:hover {
+    background-color: #4c9459;    
+}

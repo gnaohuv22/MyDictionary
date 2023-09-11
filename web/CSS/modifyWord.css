@@ -1,0 +1,169 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jul 17, 2023, 4:13:22 PM
+    Author     : hoang
+*/
+
+@keyframes fade {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: #fffaf0;
+    overflow: auto;
+}
+
+.default-profile-img {
+    position: absolute;
+    top: 0;
+    right: 80px;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    cursor: pointer;
+}
+
+.task {
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    padding-right: 30px;
+    display: none;
+    flex-direction: column;
+    background: white;
+    border-radius: 5px;
+    list-style: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    
+}
+
+.task.show-menu {
+    display: block;
+}
+
+.task a {
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+.task a {
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    animation: fade 0.75s ease-in-out;
+}
+
+.modify-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    min-width: 400px;
+    box-shadow: 2px 4px 6px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.meaning {
+    margin-bottom: 20px;
+}
+
+.modify-box .delete-but input[type="submit"] {
+    width: 100%;
+    background-color: #ff5d4d;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.modify-box .delete-but input[type="submit"]:hover {
+    background-color: #cf3933;
+}
+
+.word-field {
+    border-bottom: 1px solid gray;
+    padding-bottom: 18px;
+    margin-bottom: 18px;
+}
+
+.modify-box h2,
+.modify-box label {
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.modify-box input[type="text"],
+.modify-box textarea,
+.modify-box select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 6px;
+}
+
+.modify-box input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.modify-box input[type="submit"]:hover {
+    background-color: #4c9459;
+}
+
+.modify-box a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #0073b1;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+.meaning-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meaning-header select {
+    flex-grow: 1;
+}
